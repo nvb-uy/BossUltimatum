@@ -1,9 +1,9 @@
-package elocindev.examplemod;
+package elocindev.bossultimatum;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import elocindev.examplemod.config.Configs;
+import elocindev.bossultimatum.config.Configs;
 //? if fabric {
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.ModInitializer;
@@ -28,18 +28,18 @@ import net.neoforged.fml.ModContainer;
 
 
 //? if forge || neoforge {
-/*@Mod(ExampleMod.MODID)
+/*@Mod(BossUltimatum.MODID)
 *///?}
-public class ExampleMod
+public class BossUltimatum
 //? if fabric {
 implements ModInitializer, ClientModInitializer
 //?}
 {
-    public static final String MODNAME = "Example Mod";
-    public static final String MODID = "example_mod";
+    public static final String MODNAME = "Boss Ultimatum";
+    public static final String MODID = "bossultimatum";
     public static final Logger LOGGER = LogManager.getLogger(MODNAME);
 
-    public ExampleMod(
+    public BossUltimatum(
         //? if neoforge {
         /*IEventBus modEventBus, ModContainer modContainer
         *///?}

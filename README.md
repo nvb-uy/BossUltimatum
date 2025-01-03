@@ -3,7 +3,7 @@ A fork of https://github.com/txnimc/TxniTemplate, used as my main multiloader te
 
 ## Steps to configure:
 1. Replace values accordingly in gradle.properties
-2. Run the "renameExampleMod" task
+2. Run the "renamebossultimatum" task
 3. Replace project name in settings.gradle.kts
 
 You can change the license of the mod as you'd like, it is defined in LICENSE.md.

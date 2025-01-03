@@ -1,15 +1,15 @@
-package elocindev.examplemod.config.entries;
+package elocindev.bossultimatum.config.entries;
 
-import elocindev.examplemod.ExampleMod;
+import elocindev.bossultimatum.BossUltimatum;
 import elocindev.necronomicon.api.config.v1.NecConfigAPI;
 import elocindev.necronomicon.config.NecConfig;
 
-public class ExampleConfig {
-    @NecConfig public static ExampleConfig INSTANCE;
+public class UltimatumConfig {
+    @NecConfig public static UltimatumConfig INSTANCE;
 
 
     public static String getFile() {
-        return NecConfigAPI.getFile(ExampleMod.MODID+".json5");
+        return NecConfigAPI.getFile(BossUltimatum.MODID+".json5");
     }
 
     public String myString = "example";

@@ -1,4 +1,4 @@
 {
-  "example_mod.configuration.client": "client",
-  "example_mod.configuration.example": "example"
+  "bossultimatum.configuration.client": "client",
+  "bossultimatum.configuration.example": "example"
 }
