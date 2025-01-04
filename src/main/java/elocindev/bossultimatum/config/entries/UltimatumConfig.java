@@ -55,7 +55,7 @@ public class UltimatumConfig {
     @Comment("   - healing_events: A list of healing events that will be applied to the boss when it dies.")
 
     @Comment(" - What does a healing event do?")
-    @Comment("  Healing events are a series of actions that will be applied based on a few conditions you set, such as:")
+    @Comment("  Healing events are a series of actions that will be applied based on a few conditions you set.")
     @Comment("   - health_gain_per_death: The amount of health the boss will gain when a nearby player dies. This happes every time and is affected by the difficulty and minimum_hp conditions, but it's not part of the ultimatum.")
     @Comment("   - ultimatum_death_count: The amount of times the boss must die to perform the ultimatum event.")
     @Comment("   - ultimatum_heals_maxhp: If true, the ultimatum_death_healing value will be set to max health.")
