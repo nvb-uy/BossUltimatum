@@ -15,7 +15,7 @@ logoFile="assets/${namespace}/logo.png"
 displayURL = "https://github.com/${github}/${name}/"
 
 [[mixins]]
-config = "${id}.mixins.json"
+config = "mixins.${id}.json"
 
 [[dependencies."${id}"]]
 modId="minecraft"

@@ -32,4 +32,4 @@ extensions.configure<StonecutterSettings> {
 	create(rootProject)
 }
 
-rootProject.name = "Example Necronomicon Mod"
+rootProject.name = "Boss Ultimatum Mod"

@@ -26,13 +26,14 @@
 		]
 	},
 	"mixins": [
-		"${id}.mixins.json"
+		"mixins.${id}.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.0",
 		"minecraft": "${mc}",
 		"fabric-api": "*",
-		"necronomicon": ">=1.6.0"
+		"necronomicon": ">=1.6.0",
+		"faux-custom-entity-data": "*"
 	},
 	"accessWidener": "${id}.accesswidener"
 }

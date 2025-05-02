@@ -9,7 +9,7 @@ val templateSettings = object : BlahajSettings {
 		}
 
 		override fun addFabric(mod : ModData, deps: DependencyHandler) {
-
+			deps.modImplementation("maven.modrinth:faux-custom-entity-data:6.0.1")
 		}
 
 		override fun addForge(mod : ModData, deps: DependencyHandler) {
@@ -43,7 +43,7 @@ val templateSettings = object : BlahajSettings {
 plugins {
 	`maven-publish`
 	application
-	id("toni.blahaj") version "1.0.9"
+	id("toni.blahaj") version "1.0.16"
 	kotlin("jvm")
 	kotlin("plugin.serialization")
 	id("dev.kikugie.j52j") version "1.0"
@@ -64,7 +64,6 @@ repositories {
 	maven("https://api.modrinth.com/maven")
 	maven("https://thedarkcolour.github.io/KotlinForForge/")
 	maven("https://maven.kikugie.dev/releases")
-	maven("https://maven.txni.dev/releases")
 	maven("https://jitpack.io")
 	maven("https://maven.neoforged.net/releases/")
 	maven("https://maven.terraformersmc.com/releases/")
@@ -74,4 +73,6 @@ repositories {
 	maven("https://maven.su5ed.dev/releases")
 	maven("https://maven.fabricmc.net")
 	maven("https://maven.shedaniel.me/")
+	maven("https://maven.blamejared.com")
+	//maven("https://maven.txni.dev/releases")
 }
