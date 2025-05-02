@@ -5,8 +5,6 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import com.faux.customentitydata.api.CustomDataHelper;
-
 import elocindev.bossultimatum.config.Configs;
 import elocindev.bossultimatum.config.entries.UltimatumConfig;
 import elocindev.bossultimatum.config.entries.UltimatumConfig.Ultimatum;
@@ -17,6 +15,10 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity.RemovalReason;
+
+//?if fabric {
+import com.faux.customentitydata.api.CustomDataHelper;
+//?}
 
 @Mixin(ServerPlayerEntity.class)
 public class ServerPlayerEntityMixin {
@@ -43,7 +45,9 @@ public class ServerPlayerEntityMixin {
     }
 
     private void applyUltimatumLogic(LivingEntity boss, Ultimatum ultimatum, ServerWorld world) {
+        //?if fabric {
         setDeathCount(boss, getDeathCount(boss)+1);
+        //?}        
 
         for (InnerHealingConfig healingConfig : ultimatum.healing_events) {            
             if (healingConfig.require_difficulty && !healingConfig.difficulty.contains(world.getDifficulty().getName())) {
